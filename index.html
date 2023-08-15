@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List-API</title>
+  <style>
+     
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 1000px;
+            height: 50px;
+            margin: 0 auto;
+            /* display: flex; */
+            justify-content:center;
+            align-items: center;
+            
+        }
+
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+            text-align: left;
+            
+            
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        h2 {
+        text-align:start;
+        
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #addTaskBtn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <h1>To-Do List App</h1>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="taskInput"></td>
+            <td><input type="date" id="dateInput"></td>
+            <td><button type="button" id="addTaskBtn">Add Task</button></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <h2>Output</h2>
+                <table id="todoList"></table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
